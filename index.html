@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sania's Calorie Tracker</title>
+    <link rel="stylesheet" href="sania.css">
+
+</head>
+<body>
+    <div class="container">
+    <h1>🍔Sania's Calorie Tracker🍕</h1>
+    <div class="calorie-limit-display">
+        <h2 id="h2element">Daily Calorie Limit: <span id="dailyLimitValue">2000</span></h2>
+        <button id="changeLimitBtn" type="button">Change</button>
+    </div>
+    <div class="img-wrap-square">
+    <img class="meme-photo" id="saniaImage" src="sania0.JPG" alt="Sania"/>
+    </div>
+    <form id="calorieForm">
+        <div class="input-row">
+        <label for="eaten">Calories Eaten😋🤤</label>
+        <input type="number" class="input-box" id="eaten" placeholder="fatty" required>
+        <label for="burned" >Calories Burned🏃‍♀️‍➡️💩</label>
+        <input type="number" class="input-box" id="burned" placeholder="fatty" value="0" required>
+        </div>
+        <div>
+        <button class ="buttons" type="submit">Track Calories</button>
+        <button id="resetLog" class="buttons" type="button">Reset Log</button>
+        </div>
+        <div id="results"></div>
+        <p class="progress-label">Calorie Meter</p>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+<!--         <div class="sania-scale">🐜 Bug(0-100) &nbsp;&nbsp;&nbsp; 🧍 Human(100-300)  &nbsp;&nbsp;&nbsp; 🐘 Elephant(300-600) &nbsp;&nbsp;&nbsp; 🌍 Planet(600+)
+        </div> -->
+        
+    </form>
+    <section class="calorie-log-section"></section>
+        
+        <h2 class="logTitle">📝Calorie Log</h2>
+        
+        <div class="log-header-row">
+            <span>Date</span>
+            <span>Eaten</span>
+            <span>Burned</span>
+            <span>Surplus</span>
+        </div>
+        <div class="logSheet">
+            <ul id="logList" class="log-list"></ul>
+        
+        </div>
+    </section>
+    </div>
+</body>
+    <script src="sania.js"></script>
+</html>
